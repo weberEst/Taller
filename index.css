@@ -1,0 +1,48 @@
+/* Estilos para la sección con id "miseccion" */
+/* Estilos para la sección con id "miSeccion" */
+
+body.index-body{
+ background-color: rgb(245, 245, 245);
+}
+#miSeccion {
+    padding: 20px; /* Añadido posteriormente según tu requerimiento */
+}
+
+/* Estilos para el contenedor de las tarjetas dentro de la sección con id "miSeccion" */
+#miSeccion .card-group {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilos para las tarjetas dentro de la sección con id "miSeccion" */
+#miSeccion .card {
+    margin-bottom: 20px; /* Agregamos un margen inferior de 20px a las tarjetas */
+}
+
+
+/* Estilos para la sección con la clase "tarjetas-section" */
+.tarjetas-section {
+    padding: 20px;
+}
+
+/* Estilos para el contenedor de las tarjetas dentro de la sección con la clase "tarjetas-section" */
+.tarjetas-section .row {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilos para las tarjetas dentro de la sección con la clase "tarjetas-section" */
+.tarjetas-section .card {
+    margin-bottom: 20px;
+}
+
+footer
+{
+    background-color: darkslategray;
+    height: 5vh;
+    color: white;
+    padding: 5px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

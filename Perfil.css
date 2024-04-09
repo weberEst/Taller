@@ -1,0 +1,22 @@
+/* Estilos para el cuerpo de la página */
+.perfil-body {
+    background-color: rgb(245, 245, 245);
+}
+
+/* Estilos para la caja con color diferente */
+.caja-color {
+    background-color: #333333; /* Gris oscuro */
+    color: #ffffff; /* Texto blanco para mayor contraste */
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.caja-color .perfil-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

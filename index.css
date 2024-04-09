@@ -1,24 +1,22 @@
-
-
 body.index-body {
     background-color: rgb(245, 245, 245);
 }
 
 #caja1 {
     background-color: #f2f2f2; /* Color de fondo */
-    padding: 20px; /* Espaciado interno */
+    padding: 20px; 
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 #caja1 h1 {
     color: #333; /* Color del texto del encabezado */
-    font-size: 24px; /* Tamaño del texto del encabezado */
+    font-size: 24px; 
 }
 
 #caja1 p {
     color: #666; /* Color del texto del párrafo */
-    font-size: 16px; /* Tamaño del texto del párrafo */
+    font-size: 16px; 
 }
 
 #miSeccion {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="css/galeria.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Galeria</title>
 </head>
@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Natzi</a>
+                <a class="navbar-brand" href="index.html">Natzi</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,11 +36,9 @@
                     <li class="nav-item">
                         <a id="loginLink" class="nav-link" href="login.html">Iniciar Sesión</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Perfil.html">Perfil</a>
                   </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Carrito</a>
+                        <a class="nav-link" href="#"><img src="img/cart.png" alt="" style="height: 25px;"></a>
                     </li>
                 </ul>
                 </div>
@@ -50,131 +48,147 @@
 </section>
     
       
-    <div class="row">
-        <div class="col-2" id="filtro">
-            <h5 >Agrupar por... </h5>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="CheckMec" id="CheckMec1">
-                <label class="form-check-label" for="CheckMec1">
-                  Mecanico 1
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="CheckMec" id="CheckMec2">
-                <label class="form-check-label" for="CheckMec2">
-                  Mecanico 2
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="CheckMec" id="CheckMec3">
-                <label class="form-check-label" for="CheckMec3">
-                  Mecanico 3
-                </label>
-            </div>
-        <button type="button" class="btn btn-dark" >Filtrar</button>
-        </div>
-
-            <div class="col-10" id="imageHolder">
-                <div class="row row-cols-1 row-cols-md-5 g-4">
-                    <div class="col">
-                      <div class="card">
-                        <img src="imagenes/2456710.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <a href="" class="stretched-link" data-bs-target="#modalPub1" data-bs-toggle="modal"></a>
-                            <h5 class="card-title">Nissan Vintage</h5>
-                            <p class="card-text">07/04/2024</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="imagenes/2456711.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <a href="" class="stretched-link" data-bs-target="#modalPub2" data-bs-toggle="modal"></a>
-                            <h5 class="card-title">Trabajo 2</h5>
-                            <p class="card-text">07/04/2024</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="imagenes/2456712.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <a href="" class="stretched-link" data-bs-target="#modalPub3" data-bs-toggle="modal"></a>
-                            <h5 class="card-title">Trabajo 3</h5>
-                            <p class="card-text">07/04/2024</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-
-                          
-                     
-                    
-                  </div>
-                  <!-- MODALS-->
-                  <div class="modal fade" id="modalPub1" aria-hidden="true" aria-labelledby="modalPub1Label" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="modalPub1Label">NISSAN VINTAGE</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-
-                          <img src="imagenes/2456710.jpg" alt="">
-                          <p> </p>
-                          <h6> Detalles</h6>
-                          <p> Trabajo realizado: Mantencion General</p>
-                            
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="modal fade" id="modalPub2" aria-hidden="true" aria-labelledby="modalPub2Label" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="modalPub2Label">Trabajo 2</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                         <img src="imagenes/2456711.jpg" alt="">
-                         <p> </p>
-                         <h6> Detalles</h6>
-                         <p> Trabajo realizado: Mantencion General</p>
-                        
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="modal fade" id="modalPub3" aria-hidden="true" aria-labelledby="modalPub3Label" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="modalPub3Label">Trabajo 3 </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="imagenes/2456712.jpg" alt="">
-                                <p> </p>g
-                                <h6> Detalles</h6>
-                                <p> Trabajo realizado: Mantencion General</p>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            
+<div class="row">
+<div class="col-2" id="filtro">
+  <h5 >Buscar por... </h5>
+  <div class="form-group">
+    <input type="text" class="form-control" id="palabraClave" placeholder="Palabra clave" style="width: 250px;">
+  </div>
+  <br>
+  <label for="inputServicio"><b>Servicio</b></label>
+  <select class="form-control" id="inputServicio" style="width: 250px;">
+    <option value="" disabled selected>Selecciona un servicio</option>
+    <option value="Servicio Técnico">Servicio Técnico</option>
+    <option value="Desabolladura y Pintura">Desabolladura y Pintura</option>
+    <option value="Repuestos">Repuestos</option>
+    <option value="Detallado">Detallado</option>
+</select>
+<br>
+<label for="radio"><b>Mecánico</b></label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="CheckMec" id="CheckMec1">
+        <label class="form-check-label" for="CheckMec1">
+          Mecánico 1
+        </label>
     </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="CheckMec" id="CheckMec2">
+        <label class="form-check-label" for="CheckMec2">
+          Mecánico 2
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="CheckMec" id="CheckMec3">
+        <label class="form-check-label" for="CheckMec3">
+          Mecánico 3
+        </label>
+    </div>
+    <br>
+<button type="button" class="btn btn-dark">Filtrar</button>
+</div>
+
+<div class="col-10" id="imageHolder">
+  <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="img/2456710.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <a href="" class="stretched-link" data-bs-target="#modalPub1" data-bs-toggle="modal"></a>
+              <h5 class="card-title">Nissan Vintage</h5>
+              <p class="card-text">07/04/2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/2456711.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <a href="" class="stretched-link" data-bs-target="#modalPub2" data-bs-toggle="modal"></a>
+              <h5 class="card-title">Trabajo 2</h5>
+              <p class="card-text">07/04/2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="img/2456712.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <a href="" class="stretched-link" data-bs-target="#modalPub3" data-bs-toggle="modal"></a>
+              <h5 class="card-title">Trabajo 3</h5>
+              <p class="card-text">07/04/2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <!-- MODALS-->
+      <div class="modal fade" id="modalPub1" aria-hidden="true" aria-labelledby="modalPub1Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalPub1Label">NISSAN VINTAGE</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <img style="margin-bottom: 10px;" src="img/2456710.jpg" alt="">
+              
+              <h6> Detalles</h6>
+              <p> Trabajo realizado: Mantención General</p>
+                
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="modalPub2" aria-hidden="true" aria-labelledby="modalPub2Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalPub2Label">Trabajo 2</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img style="margin-bottom: 10px;" src="img/2456711.jpg" alt="">
+              <br>
+              <h6> Detalles</h6>
+              <p> Trabajo realizado: Mantención General</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalPub3" aria-hidden="true" aria-labelledby="modalPub3Label" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalPub3Label">Trabajo 3 </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img style="margin-bottom: 10px;" src="img/2456712.jpg" alt="">
+                    <br>
+                    <h6> Detalles</h6>
+                    <p> Trabajo realizado: Mantención General</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <footer>
+    <div>
+      SOLO POR CUESTIONES DE DEBUG <a href="galeriaMecanico.html">Vista Mecanico</a>, <a href="galeriaAdministrador.html">Vista Administrador</a>
+    </div>
+  </footer>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

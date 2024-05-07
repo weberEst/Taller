@@ -42,27 +42,32 @@
             </div>
         </nav>
     </header>
+
     <div class="container mt-3" id="formulario"> 
-        <div class="row justify-content-center" style="margin-top: 50px;">
+        <div class="row justify-content-center">
             <h1 class="text-center">Registrarse</h1>
             <div class="col-md-6">
-                <form id="loginForm">
+                <form id="loginForm" action="https://www.toptal.com/developers/postbin/b/1714981084361-4741977439261" method="POST">
                     <div class="mb-3">
                         <label for="inputEmail" class="form-label">Dirección de correo electrónico</label>
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text"></div>
                     </div>
                     <div class="mb-3">
                         <label for="inputContrasena" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="inputContrasena">
+                        <input type="password" class="form-control" id="inputContrasena" name="password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputConfirmarContrasena" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="inputConfirmarContrasena" name="confirmPassword">
                     </div>
                     <div class="mb-3">
                         <label for="inputDireccion" class="form-label">Dirección</label>
-                        <input type="text" class="form-control" id="inputDireccion">
+                        <input type="text" class="form-control" id="inputDireccion" name="direccion">
                     </div>
                     <div class="mb-3">
-                        <label for="labelRegion">Región </label>
-                        <select id="selectRegion" class="form-control">
+                        <label for="selectRegion">Región</label>
+                        <select id="selectRegion" class="form-control" name="region">
                             <option selected></option>
                             <option>Región de Valparaíso</option>
                             <option>Región Metropolitana</option>
@@ -71,10 +76,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="inputCiudad" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="inputCiudad">
+                        <input type="text" class="form-control" id="inputCiudad" name="ciudad">
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" name="terms">
                         <label class="form-check-label" for="gridCheck">
                             Acepto términos y condiciones.
                         </label>
@@ -85,5 +90,7 @@
             </div>
         </div>
     </div>
+
+    <script src="js/registro.js"></script>
 </body>
 </html>

@@ -9,6 +9,7 @@
 body
 {
     background-color: #dcdcdc;
+    
 }
 
 .btn
@@ -27,9 +28,19 @@ body
     background-color: #dcdcdc;
     height: 100vh;
 }
+
 .pendiente
 {
     background-color: red;
     outline: black;
     outline-width: 2px;
+}
+
+footer {
+    background-color: darkslategray;
+    height: 5vh;
+    color: white;
+    padding: 5px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

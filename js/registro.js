@@ -1,55 +1,62 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe antes de las validaciones
+$(document).ready(function() {
+    // Capturamos el evento de envío del formulario
+    $('#loginForm').submit(function(event) {
+        // Evitamos que el formulario se envíe automáticamente
+        event.preventDefault();
+        
+        // Obtenemos los valores de los campos del formulario
+        var email = $('#inputEmail').val();
+        var password = $('#inputContrasena').val();
+        var confirmPassword = $('#inputConfirmarContrasena').val();
+        var direccion = $('#inputDireccion').val();
+        var region = $('#selectRegion').val();
+        var ciudad = $('#inputCiudad').val();
+        var termsAccepted = $('#gridCheck').prop('checked');
 
-    // Obtiene los valores del formulario de registro
-    var email = document.getElementById("inputEmail").value;
-    var password = document.getElementById("inputContrasena").value;
-    var confirmPassword = document.getElementById("inputConfirmarContrasena").value;
-    var direccion = document.getElementById("inputDireccion").value;
-    var region = document.getElementById("selectRegion").value;
-    var ciudad = document.getElementById("inputCiudad").value;
-    var termsAccepted = document.getElementById("gridCheck").checked;
+        // Creamos un objeto con los datos del formulario
+        var formData = {
+            email: email,
+            password: password,
+            confirmPassword: confirmPassword,
+            direccion: direccion,
+            region: region,
+            ciudad: ciudad,
+            termsAccepted: termsAccepted
+        };
 
-    // Verifica si algún campo del formulario está vacío
-    if (!email || !password || !confirmPassword || !direccion || !region || !ciudad || !termsAccepted) {
-        alert("Por favor, completa todos los campos del formulario");
-        return; // Detiene la ejecución del script si algún campo está vacío
-    }
+        // Verificamos si todos los campos están completos
+        if (!email || !password || !confirmPassword || !direccion || !region || !ciudad || !termsAccepted) {
+            alert("Por favor, completa todos los campos del formulario");
+            return;
+        }
 
-    // Expresión regular para validar la contraseña: al menos 8 caracteres, una letra minúscula, una letra mayúscula y un número
-    var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+         // validaciones
+        var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
-    // Verifica si la contraseña cumple con los criterios
-    if (!passwordRegex.test(password)) {
-        alert("La contraseña debe contener al menos 8 caracteres, una letra minúscula, una letra mayúscula y un número");
-        return;
-    }
+        if (!passwordRegex.test(password)) {
+            alert("La contraseña debe contener al menos 8 caracteres, una letra minúscula, una letra mayúscula y un número");
+            return;
+        }
 
-    // Verifica si la contraseña coincide con la confirmación de contraseña
-    if (password !== confirmPassword) {
-        alert("La contraseña y la confirmación de contraseña no coinciden");
-        return; // Detiene la ejecución del script si las contraseñas no coinciden
-    }
+        if (password !== confirmPassword) {
+            alert("La contraseña y la confirmación de contraseña no coinciden");
+            return;
+        }
 
-    // Expresión regular para validar el formato de la dirección: texto seguido de números (por ejemplo: "Gabriela Mistral 833")
-    var direccionRegex = /^[a-zA-Z\s]+\d+$/;
+        var direccionRegex = /^[a-zA-Z\s]+\d+$/;
 
-    // Verifica si la dirección cumple con el formato
-    if (!direccionRegex.test(direccion)) {
-        alert("El formato de la dirección es inválido. Debe ser texto seguido de números (por ejemplo: 'Gabriela Mistral 833')");
-        return;
-    }
+        if (!direccionRegex.test(direccion)) {
+            alert("El formato de la dirección es inválido. Debe ser texto seguido de números (por ejemplo: 'Gabriela Mistral 833')");
+            return;
+        }
 
-    // Verifica si se han aceptado los términos y condiciones
-    if (!termsAccepted) {
-        alert("Debes aceptar los términos y condiciones para registrarte");
-        return; 
-    }
+        if (!termsAccepted) {
+            alert("Debes aceptar los términos y condiciones para registrarte");
+            return;
+        }
 
-    alert("Registro exitoso");
+        // Si todas las validaciones pasan, mostramos un mensaje de registro exitoso
+        alert("¡Registro exitoso! Gracias por registrarte.");
 
-     
-
-   
-    window.location.href = "Registroexitoso.html";
+    });
 });

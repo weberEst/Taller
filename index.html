@@ -130,49 +130,67 @@
 
   
     
-    <section id="Servicios" class="tarjetas-section">
-      <h1 class="text-center">SERVICIOS</h1>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col mb-4">
-          <div class="card">
-            <img src="img/Serviciotecnico.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">SERVICIO TÉCNICO</h5>
-              <p class="card-text">MANTENCIONES – FRENOS – ALINEACIÓN – CAMBIO DE ACEITE</p>
+  <section id="servicios">
+    <div class="container">
+        <h2 class="text-center">SERVICIOS</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/Serviciotecnico.png" class="card-img-top" alt="Servicio 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio 1</h5>
+                        <p class="card-text">Descripción del servicio 1.</p>
+                        <p class="card-text">Precio: $10.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="1" data-name="Servicio 1" data-price="10.00">Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="img/Serviciotecnico.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">DESABOLLADURA Y PINTURA</h5>
-              <p class="card-text">REPARACIONES PARTICULARES  O POR COMPAÑÍAS DE SEGURO</p>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/Serviciotecnico.png" class="card-img-top" alt="Servicio 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio 2</h5>
+                        <p class="card-text">Descripción del servicio 2.</p>
+                        <p class="card-text">Precio: $15.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="2" data-name="Servicio 2" data-price="15.00">Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="img/Serviciotecnico.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">REPUESTOS</h5>
-              <p class="card-text">PRÓXIMAMENTE</p>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/Serviciotecnico.png" class="card-img-top" alt="Servicio 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio 3</h5>
+                        <p class="card-text">Descripción del servicio 3.</p>
+                        <p class="card-text">Precio: $20.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="3" data-name="Servicio 3" data-price="20.00">Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card">
-            <img src="img/Serviciotecnico.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">DETALLADO</h5>
-              <p class="card-text">MANTENCIONES
-                EXTERIOR
-                PACK FULL</p>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/Serviciotecnico.png" class="card-img-top" alt="Servicio 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Servicio 4</h5>
+                        <p class="card-text">Descripción del servicio 4.</p>
+                        <p class="card-text">Precio: $25.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="4" data-name="Servicio 4" data-price="25.00">Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
+
+<section>
+    <h2 class="text-center">Carrito de Compras</h2>
+    <div class="container">
+        <ul class="list-group cart-items">
+            <!-- Items del carrito -->
+        </ul>
+        <p class="text-right">Total: $<span class="cart-total">0.00</span></p>
+    </div>
+</section>
 
 
 

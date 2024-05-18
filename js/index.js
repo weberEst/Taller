@@ -70,13 +70,13 @@ class CarritoDeCompras {
     }
 
     verificarDisponibilidad(servicio, cantidad) {
-        // Lógica para verificar disponibilidad en el inventario
-        // Aquí puedes implementar tu propia lógica para verificar el inventario
+        //  para verificaciones futuras
+     
         return true;
     }
 
     procesarPago() {
-        // Lógica para procesar el pago
+        // para verificaciones futuras
         console.log('Procesando pago...');
     }
 
